@@ -10,8 +10,11 @@
     "express": "^4.12.3"
   },
   "devDependencies": {
+    "istanbul": "^0.3.16",
     "mocha": "~2.1.0",
-    "mocha-teamcity-reporter": ">=0.0.1"
+    "mocha-teamcity-reporter": ">=0.0.1",
+    "should": "^7.0.1",
+    "supertest": "^1.0.1"
   },
   "scripts": {
     "test": "npm run unit-test-tc",

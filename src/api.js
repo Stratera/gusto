@@ -13,3 +13,5 @@ app.get('/', function(req, res) {
 app.listen(8999, function() {
     console.log('gusto api server started. whatever you do, do it with gusto.');
 });
+
+module.exports.getApp = app;
