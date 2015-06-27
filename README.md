@@ -28,7 +28,7 @@ Other package manager examples can be found on [joyent's github page](https://gi
 - once you've downloaded the repo, change directory to the root gusto directory
 - run commands
 	-  ```npm install```
-	-  ```node gusto```
+	-  ```npm run start```
 
 At this point, you can hit gusto routes, for example:
 
