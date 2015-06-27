@@ -1,0 +1,18 @@
+{
+  "name": "gusto",
+  "version": "0.0.1",
+  "main": "src/api.js",
+  "dependencies": {
+    "express": "^4.12.3"
+  },
+  "devDependencies": {
+    "mocha": "~2.1.0",
+    "mocha-teamcity-reporter": ">=0.0.1"
+  },
+  "scripts": {
+    "test": "npm run unit-test-tc",
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha ./test/unit/mocha --report html",
+    "unit-test": "mocha ./test/unit/mocha",
+    "unit-test-tc": "mocha ./test/unit/mocha --reporter mocha-teamcity-reporter test"
+  }
+}
