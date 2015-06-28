@@ -50,3 +50,10 @@ At this point, you can hit gusto routes, for example:
 	-  ```npm install```
 	-  ```npm run test```
 
+## Code Coverate
+**Local unit testing**
+
+- once you've downloaded the repo, change directory to the root gusto directory
+- run commands
+	-  ```npm install```
+	-  ```npm run code-coverage```
