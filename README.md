@@ -1,13 +1,13 @@
 # Gusto
-## Public Application Location
-```http://REPLACE.WITH.PUBLIC.URL.WHEN.AVAILABLE/```
+## Public Application Location 
+http://52.24.97.8:8999/
 
 ## References
 **GitHub:** https://github.com/Stratera/gusto
 
 **JIRA:** https://strateratech.atlassian.net
 
-**NPM:** TBD
+**NPM:** https://www.npmjs.com/package/gusto-stratera
 
 
 ## Dependencies
@@ -16,10 +16,14 @@ This is a node.js application which requires you to have node installed. To inst
 Alternatively, it's available for installation through a number of package managers, for example:
 
 *chocolatey:*
-```choco install nodejs.install```
+```bash
+choco install nodejs.install
+```
 
 *yum:*
-```sudo yum install nodejs npm --enablerepo=epel```
+```bash
+sudo yum install nodejs npm --enablerepo=epel
+```
 
 Other package manager examples can be found on [joyent's github page](https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager "joyent's github page").
  
@@ -32,9 +36,9 @@ Other package manager examples can be found on [joyent's github page](https://gi
 
 At this point, you can hit gusto routes, for example:
 
-```http://localhost:8999/```
+http://localhost:8999/
 
-```http://localhost:8999/stub/```
+http://localhost:8999/stub/
 
 ## Unit Testing
 **Local unit testing**
@@ -50,7 +54,7 @@ At this point, you can hit gusto routes, for example:
 	-  ```npm install```
 	-  ```npm run test```
 
-## Code Coverate
+## Code Coverage
 **Local unit testing**
 
 - once you've downloaded the repo, change directory to the root gusto directory
