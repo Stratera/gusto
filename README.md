@@ -35,3 +35,25 @@ At this point, you can hit gusto routes, for example:
 ```http://localhost:8999/```
 
 ```http://localhost:8999/stub/```
+
+## Unit Testing
+**Local unit testing**
+
+- once you've downloaded the repo, change directory to the root gusto directory
+- run commands
+	-  ```npm install```
+	-  ```npm run unit-test```
+
+**TeamCity unit testing**
+
+- TeamCity will be running the testing using the mocha-teamcity-reporter package for output. the command executed by TeamCity is
+	-  ```npm install```
+	-  ```npm run test```
+
+## Code Coverate
+**Local unit testing**
+
+- once you've downloaded the repo, change directory to the root gusto directory
+- run commands
+	-  ```npm install```
+	-  ```npm run coverage```
