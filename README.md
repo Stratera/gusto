@@ -1,6 +1,6 @@
 # Gusto
 ## Public Application Location 
-http://52.24.97.8:8999/
+http://52.24.131.202:8999/
 
 ## References
 **GitHub:** https://github.com/Stratera/gusto
