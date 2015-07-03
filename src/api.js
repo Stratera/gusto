@@ -4,7 +4,7 @@ var packjson = require('../package.json');
 
 var proxy = require('express-http-proxy');
  
-app.use('/v1', proxy('api.fda.gov', {
+app.use('/v1/proxy/', proxy('api.fda.gov', {
   forwardPath: function(req, res) {
     return require('url').parse(req.url).path;
   }
