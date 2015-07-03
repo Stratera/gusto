@@ -1,13 +1,14 @@
 {
   "name": "gusto-stratera",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "main": "server.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/Stratera/gusto.git"
   },
   "dependencies": {
-    "express": "^4.12.3"
+    "express": "^4.12.3",
+    "express-http-proxy": "^0.6.0"
   },
   "devDependencies": {
     "istanbul": "^0.3.16",
