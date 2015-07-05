@@ -1,7 +1,7 @@
 {
   "name": "gusto-stratera",
-  "version": "0.1.8",
-  "main": "server.js",
+  "version": "0.1.9",
+  "main": "gusto.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/Stratera/gusto.git"
@@ -19,8 +19,8 @@
   },
   "scripts": {
     "test": "npm run unit-test-tc",
-    "start": "node server.js",
-    "debug": "node server.js --debug",
+    "start": "node gusto.js",
+    "debug": "node gusto.js --debug",
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha ./test/unit/mocha --report html",
     "unit-test": "mocha ./test/unit/mocha",
     "unit-test-tc": "mocha ./test/unit/mocha --reporter mocha-teamcity-reporter test"
