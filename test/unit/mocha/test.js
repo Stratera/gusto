@@ -20,7 +20,7 @@ describe('Routes', function(){
       .get('/version')
       .expect(200, done);
   });
-  it('GET /stub responds with a 302', function(done){
+  it('GET /v1/proxy/drug/event.json responds with a 302', function(done){
     request(app)
       .get('/v1/proxy/drug/event.json?search=patient.drug.openfda.pharm_class_epc:"nonsteroidal+anti-inflammatory+drug"&count=patient.reaction.reactionmeddrapt.exact')
       .expect(200, done);
