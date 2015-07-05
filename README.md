@@ -12,7 +12,7 @@ http://gusto.strateratech.com:8999/
 1)
 Assigned one leader, gave that person authority and responsibility, and held that person accountable for the quality of the prototype submitted.
 
-See email at LINK
+[See email](DevelopmentPoolEvidence/team/TechnicalLeadEmail.JPG)
 
 2)
 Assembled a multidisciplinary and collaborative team that includes at a minimum of two of the labor categories limited to the Development Pool labor categories.    
