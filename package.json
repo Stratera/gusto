@@ -1,6 +1,6 @@
 {
   "name": "gusto-stratera",
-  "version": "0.1.7",
+  "version": "0.1.9",
   "main": "server.js",
   "repository": {
     "type": "git",
