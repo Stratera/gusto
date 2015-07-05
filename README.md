@@ -39,22 +39,35 @@ Deployed the prototype on an Infrastructure as a Service (IaaS) or Platform as a
 The Gusto application is deployed to the Amazon EC2 (IaaS) and is running on t2.micro CentOS 6.5 servers. The delivery of updates to Gusto is being orchestrated by a TeamCity build server which has been established in EC2 and is also being run on a t2.micro server running CentOS 6.5.
 
 Gusto has been mande publicly available at the following dns/ip url:
-http://gusto.strateratech.com:8999/
-http://52.24.131.202:8999/
+
+[http://gusto.strateratech.com:8999/](http://gusto.strateratech.com:8999/)
+
+[http://52.24.131.202:8999/](http://52.24.131.202:8999/)
 
 
 5) Wrote unit tests for their code.
 
 Unit tests were written in the mocha framework. Istanbul was used for code coverage metric collection and the mocha-teamcity-reporter was used to feed the test results to our teamcity server. We have accomplished 100% code coverage.
-<Get Link to screenshots>
-<Expand on this>
-<check this stat before submission>
+
+[See test-list](DevelopmentPoolEvidence/teamcity/test-list.JPG)
+
+[See code-coverage](DevelopmentPoolEvidence/teamcity/code-coverage.JPG)
+
+[See it all in TeamCity](http://teamcity.strateratech.com:8111/viewLog.html?buildId=105&buildTypeId=Gusto_PreRelease&tab=testsInfo)
+(use the guest link to login)
 
 6.) Set up or used a continuous integration system to automate the running of tests and continuously deployed their code to their IaaS or PaaS provider
 
-TeamCity is monitoring all feature branches of the Stratera/Gusto GitHub repo on an ongoing basis in our PreRelease job in TeamCity. Any commits to any branch will trigger a build and unit test execution. Code coverage metrics are collected and all of the test result information is made available in TeamCity. The build result is also provided back to GitHub so that any pull requests are identified as safe or unsafe to merge. 
-[add link to teamcity images]
-[get evidence of delivery to prod]
+Our TeamCity server is available [here](http://teamcity.strateratech.com:8111).
+(use the guest account link to log in)
+
+TeamCity is actively monitoring all feature branches of the Stratera/Gusto GitHub repo on an ongoing basis. Any commits to any branch will trigger a PreRelease build and unit test execution. Code coverage metrics are collected and all of the test result information is made available in TeamCity. The build result is also provided back to GitHub so that any pull requests are identified as safe or unsafe to merge. 
+
+[See project view](DevelopmentPoolEvidence/teamcity/project-overview.JPG)
+
+[See pull request integration](DevelopmentPoolEvidence/github/pr-teamcity.JPG)
+
+Commits to master automatically package gusto and publish it to npmjs.com. A successful publish job will automatically trigger the Deployment job to Production.
 
 7.) 
 Set up or used configuration management
@@ -64,35 +77,37 @@ GitHub is used for our source code repository and our code and configuration con
 8) 
 Set up or used continuous monitoring
 
-NEED TO REVISIT ONCE DOCKER HAS BEEN IMPLEMENTED
+Our application and ci servers are being actively monitored in Amazon CloudWatch and will alert our administrator when an problem is identified.
 
 9.) 
 Deploy their software in a container (i.e., utilized operating-system-level virtualization)
-DOCKER -- get final info and put it here
+
+The gusto application has been designed to run on AWS t2.micro instances running CentOS 6.5.
 
 10.) 
 Make use of a API, by either consuming or providing one RESTfully.
 
-The Gusto application was written in Node to leverage some of the elegant capabilities of the javascript language. The Express framework was used to extend routes to the node engine, allowing us to both serve RESTful routes and consume RESTful routes in a very consise manor. All of the openfda routes are available through the gusto "/v1/proxy" route.
+The Gusto application was written in Node to make use of some of the elegant capabilities of the javascript language. The Express framework was used to extend routes to the node engine, allowing us to both serve RESTful routes and consume RESTful routes in a very consise manor. All of the openfda routes are available through the gusto "/v1/proxy" route by merely appending the openfda to the proxy route.
 
-[Add another example route which proxies and filters content if time permits] 
+[Example gusto proxy route](http://gusto.strateratech.com:8999/v1/proxy/drug/event.json?search=patient.drug.openfda.pharm_class_epc:"nonsteroidal+anti-inflammatory+drug"&count=patient.reaction.reactionmeddrapt.exact)
 
 11.) 
 Used an iterative approach, where feedback informed subsequent work or versions of the prototype
 
 The Gusto Development and DevOps teams are both following an agile scrum methodology which has allowed for a fast pace iterative software development environment. Sprint planning, daily stand-ups, retrospectives, and the use of sprints allowed us to quickly identify blocker and prioritize the team's responsibilities. All of our work was managed in Atlassian JIRA.
 
-ADD LINK TO THE 2 AGILE BOARD SCREENSHOTS
-GET SCREENSHOT OF THE RETROSPECTIVE SUMMARY
+[Dev Agile Board](DevelopmentPoolEvidence/agile-scrum/Sprint-0-dev.JPG)
 
+[DevOps Agile Board](DevelopmentPoolEvidence/agile-scrum/Sprint-0-devops.JPG)
+
+[Retrospectives](DevelopmentPoolEvidence/agile-scrum/Sprint-0-retrospective.JPG)
 
 12.) 
 Provided sufficient documentation to install and run their prototype on another machine
 
-LINK TO installation readme - consider having a consise instruction at the top of this readme.
+[DevelopmentPoolEvidence/Installation.md](DevelopmentPoolEvidence/Installation.md)
 
 13)
 Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
 
-No technology used required a license or payment for use. Most of the prototype's development and technology stack is open source. The products used that are openly licensed and free of charge include:
-teamcity
+No technology used requires license or payment for use.
