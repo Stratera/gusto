@@ -17,10 +17,10 @@ Assigned one leader, gave that person authority and responsibility, and held tha
 2)
 Assembled a multidisciplinary and collaborative team that includes at a minimum of two of the labor categories limited to the Development Pool labor categories.    
 
-Our Team consists of a DevOps Engineer and a Back-end Developer.  Both team members are experienced in the agile scrum development methodology and in playing the role of scrum master.  The DevOps Engineer plays the role of Scrum Master and also performs some of the development tasks.  The Web Developer performs the development quality assurance tasks such as peer reviews.
+Our Team consists of a DevOps Engineer and a Back-end Developer.  Both team members are experienced in the agile scrum development methodology and in playing the role of scrum master.  The DevOps Engineer plays the role of Scrum Master and also performs some of the development tasks.  The Back-end Developer performs the development quality assurance tasks such as peer reviews.
 
 3)
-used at least five modern and open-source technologies, regardless of architectural layer (frontend, backend, etc.)
+Used at least five modern and open-source technologies, regardless of architectural layer (frontend, backend, etc.)
 
 centos 6.5 
 node 0.12.0
@@ -31,18 +31,14 @@ mocha 2.1.0
 mocha-teamcity-reporter 0.0.1
 should 7.0.1
 supertest 1.0.1
-docker (get version)
-python (get version)
-.... think about any others
-
+git 1.9.5
 
 4)
 Deployed the prototype on an Infrastructure as a Service (IaaS) or Platform as a Service (PaaS) provider, and indicated which provider they used
 
-Gusto application is being deployed to AWS using Elastic Beanstalk and docker orchestrated by our TeamCity build server.
-<<EXPAND ON THIS>>
+The Gusto application is deployed to the Amazon EC2 (IaaS) and is running on t2.micro CentOS 6.5 servers. The delivery of updates to Gusto is being orchestrated by a TeamCity build server which has been established in EC2 and is also being run on a t2.micro server running CentOS 6.5.
 
-Provide Amazon public dns address as well as Public ip (edited)
+Gusto has been mande publicly available at the following dns/ip url:
 http://gusto.strateratech.com:8999/
 http://52.24.131.202:8999/
 
