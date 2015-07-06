@@ -20,7 +20,7 @@ Gusto is a Node and Express application which has been delivered to Amazon, runn
 1)
 Assigned one leader, gave that person authority and responsibility, and held that person accountable for the quality of the prototype submitted.
 
-[See email](DevelopmentPoolEvidence/team/TechnicalLeadEmail.JPG)
+[Email](DevelopmentPoolEvidence/team/TechnicalLeadEmail.JPG)
 
 2)
 Assembled a multidisciplinary and collaborative team that includes at a minimum of two of the labor categories limited to the Development Pool labor categories.    
@@ -45,11 +45,11 @@ Gusto has been made publicly available at the following url:
 
 Unit tests were written in the mocha framework. Istanbul was used for code coverage metric collection and the mocha-teamcity-reporter was used to feed the test results to our teamcity server. We have accomplished 100% code coverage.
 
-[See test-list](DevelopmentPoolEvidence/teamcity/test-list.JPG)
+[Tests](DevelopmentPoolEvidence/teamcity/test-list.JPG)
 
-[See code-coverage](DevelopmentPoolEvidence/teamcity/code-coverage.JPG)
+[Coverage](DevelopmentPoolEvidence/teamcity/code-coverage.JPG)
 
-[See it all in TeamCity](http://teamcity.strateratech.com:8111/viewLog.html?buildId=105&buildTypeId=Gusto_PreRelease&tab=testsInfo)
+[TeamCity](http://teamcity.strateratech.com:8111/viewLog.html?buildId=105&buildTypeId=Gusto_PreRelease&tab=testsInfo)
 (use the guest link to login)
 
 6) Set up or used a continuous integration system to automate the running of tests and continuously deployed their code to their IaaS or PaaS provider
@@ -59,9 +59,9 @@ Our TeamCity server is available [here](http://teamcity.strateratech.com:8111).
 
 TeamCity is actively monitoring all feature branches of the Stratera/Gusto GitHub repo on an ongoing basis. Any commits to any branch will trigger a PreRelease build and unit test execution. Code coverage metrics are collected and all of the test result information is made available in TeamCity. The build result is also provided back to GitHub so that any pull requests are identified as safe or unsafe to merge. 
 
-[See project view](DevelopmentPoolEvidence/teamcity/project-overview.JPG)
+[Project view](DevelopmentPoolEvidence/teamcity/project-overview.JPG)
 
-[See pull request integration](DevelopmentPoolEvidence/github/pr-teamcity.JPG)
+[Pull request integration](DevelopmentPoolEvidence/github/pr-teamcity.JPG)
 
 Commits to master automatically package gusto and publish it to npmjs.com. A successful publish job will automatically trigger the Deployment job to Production.
 
@@ -75,7 +75,7 @@ Set up or used continuous monitoring
 
 Our application and ci servers are being actively monitored in Amazon CloudWatch and will alert our administrator when an problem is identified.
 
-[See monitoring](DevelopmentPoolEvidence/aws/monitoring.JPG)
+[Monitoring](DevelopmentPoolEvidence/aws/monitoring.JPG)
 
 9) 
 Deploy their software in a container (i.e., utilized operating-system-level virtualization)
