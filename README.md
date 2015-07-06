@@ -30,6 +30,8 @@ Our Team consists of a DevOps Engineer and a Back-end Developer.  Both team memb
 3)
 Used at least five modern and open-source technologies, regardless of architectural layer (frontend, backend, etc.)
 
+![Version](DevelopmentPoolEvidence/general/Versions.JPG)
+
 | Technology | Version |
 | ---------- | ------- |
 | centos | 6.5 |
