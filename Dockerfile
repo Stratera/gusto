@@ -4,9 +4,9 @@ RUN     rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-
 RUN     yum install -y npm
 
 # Register gusto source
-COPY . /src
-COPY . package.json
-COPY . gusto.js
+COPY src /src
+COPY package.json
+COPY gusto.js
 
 EXPOSE  8999
 
