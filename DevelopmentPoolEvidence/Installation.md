@@ -1,5 +1,5 @@
 ## Dependencies
-This is a node.js application which requires you to have node installed. To install node, please visit ```https://nodejs.org/download/``` and download and run the latest version of node.
+This is a node.js application which requires you to have node installed. To install node, please visit [nodejs.org](https://nodejs.org/download/) and download and run the latest version of node.
 
 Alternatively, it's available for installation through a number of package managers, for example:
 
@@ -24,9 +24,11 @@ Other package manager examples can be found on [joyent's github page](https://gi
 
 At this point, you can hit gusto routes, for example:
 
-http://localhost:8999/
+[http://localhost:8999/](http://localhost:8999/)
 
-http://localhost:8999/stub/
+[http://localhost:8999/version/](http://localhost:8999/version/)
+
+[http://localhost:8999/v1/proxy/drug/event.json?search=patient.drug.openfda.pharm_class_epc:%22nonsteroidal+anti-inflammatory+drug%22&count=patient.reaction.reactionmeddrapt.exact](http://localhost:8999/v1/proxy/drug/event.json?search=patient.drug.openfda.pharm_class_epc:%22nonsteroidal+anti-inflammatory+drug%22&count=patient.reaction.reactionmeddrapt.exact)
 
 ## Unit Testing
 **Local unit testing**

@@ -1,6 +1,6 @@
 # Gusto
 ## Public Application Location 
-http://gusto.strateratech.com:8999/
+http://ec2-52-27-171-231.us-west-2.compute.amazonaws.com/
 
 ## References
 **GitHub:** https://github.com/Stratera/gusto
@@ -8,6 +8,14 @@ http://gusto.strateratech.com:8999/
 **JIRA:** https://strateratech.atlassian.net
 
 **NPM:** https://www.npmjs.com/package/gusto-stratera
+
+## Overview
+Gusto is a Node and Express application which has been delivered to Amazon, running in a Docker container in Production. The Gusto application was written in Node to make use of some of the elegant capabilities of the javascript language. The Express framework was used to extend routes to the node engine, allowing us to both serve RESTful routes and consume RESTful routes in a very consise manor. All of the openfda routes are available through the gusto "/v1/proxy" route by merely appending the openfda to the proxy route.
+
+[Example gusto proxy route](http://ec2-52-27-171-231.us-west-2.compute.amazonaws.com/v1/proxy/drug/event.json?search=patient.drug.openfda.pharm_class_epc:"nonsteroidal+anti-inflammatory+drug"&count=patient.reaction.reactionmeddrapt.exact)
+
+
+## Implementation
 
 1)
 Assigned one leader, gave that person authority and responsibility, and held that person accountable for the quality of the prototype submitted.
@@ -27,6 +35,7 @@ Used at least five modern and open-source technologies, regardless of architectu
 | centos | 6.5 |
 | node | 0.12.0 |
 | express | 4.12.3 |
+| docker | 1.6.2 |
 | express-http-proxy | 0.6.0 |
 | istanbul | 0.3.16 |
 | mocha | 2.1.0 |
@@ -41,12 +50,9 @@ Deployed the prototype on an Infrastructure as a Service (IaaS) or Platform as a
 
 The Gusto application is deployed to the Amazon EC2 (IaaS) and is running on t2.micro CentOS 6.5 servers. The delivery of updates to Gusto is being orchestrated by a TeamCity build server which has been established in EC2 and is also being run on a t2.micro server running CentOS 6.5.
 
-Gusto has been mande publicly available at the following dns/ip url:
+Gusto has been made publicly available at the following url:
 
-[http://gusto.strateratech.com:8999/](http://gusto.strateratech.com:8999/)
-
-[http://52.24.131.202:8999/](http://52.24.131.202:8999/)
-
+[http://ec2-52-27-171-231.us-west-2.compute.amazonaws.com/](http://ec2-52-27-171-231.us-west-2.compute.amazonaws.com/)
 
 5) Wrote unit tests for their code.
 
@@ -82,22 +88,17 @@ Set up or used continuous monitoring
 
 Our application and ci servers are being actively monitored in Amazon CloudWatch and will alert our administrator when an problem is identified.
 
+[See monitoring](DevelopmentPoolEvidence/aws/monitoring.JPG)
+
 9.) 
 Deploy their software in a container (i.e., utilized operating-system-level virtualization)
 
-The gusto application has been designed to run on AWS t2.micro instances running CentOS 6.5.
+The gusto application runs in a Docker container in our Production environment.
 
-10.) 
-Make use of a API, by either consuming or providing one RESTfully.
-
-The Gusto application was written in Node to make use of some of the elegant capabilities of the javascript language. The Express framework was used to extend routes to the node engine, allowing us to both serve RESTful routes and consume RESTful routes in a very consise manor. All of the openfda routes are available through the gusto "/v1/proxy" route by merely appending the openfda to the proxy route.
-
-[Example gusto proxy route](http://gusto.strateratech.com:8999/v1/proxy/drug/event.json?search=patient.drug.openfda.pharm_class_epc:"nonsteroidal+anti-inflammatory+drug"&count=patient.reaction.reactionmeddrapt.exact)
-
-11.) 
+10) 
 Used an iterative approach, where feedback informed subsequent work or versions of the prototype
 
-The Gusto Development and DevOps teams are both following an agile scrum methodology which has allowed for a fast pace iterative software development environment. Sprint planning, daily stand-ups, retrospectives, and the use of sprints allowed us to quickly identify blocker and prioritize the team's responsibilities. All of our work was managed in Atlassian JIRA.
+The Gusto Development and DevOps teams are both following an agile scrum methodology which has allowed for a fast pace iterative software development environment. Sprint planning, daily stand-ups, retrospectives, and the use of sprints allowed us to quickly identify blockers and prioritize the team's responsibilities. Slack was used for informal collaboration. All of our work was formally managed in Atlassian JIRA.
 
 [Dev Agile Board](DevelopmentPoolEvidence/agile-scrum/Sprint-0-dev.JPG)
 
@@ -105,12 +106,12 @@ The Gusto Development and DevOps teams are both following an agile scrum methodo
 
 [Retrospectives](DevelopmentPoolEvidence/agile-scrum/Sprint-0-retrospective.JPG)
 
-12.) 
+11) 
 Provided sufficient documentation to install and run their prototype on another machine
 
 [DevelopmentPoolEvidence/Installation.md](DevelopmentPoolEvidence/Installation.md)
 
-13)
+12)
 Prototype and underlying platforms used to create and run the prototype are openly licensed and free of charge
 
 No technology used requires license or payment for use.
