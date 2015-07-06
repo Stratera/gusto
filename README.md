@@ -52,7 +52,7 @@ Unit tests were written in the mocha framework. Istanbul was used for code cover
 [See it all in TeamCity](http://teamcity.strateratech.com:8111/viewLog.html?buildId=105&buildTypeId=Gusto_PreRelease&tab=testsInfo)
 (use the guest link to login)
 
-6.) Set up or used a continuous integration system to automate the running of tests and continuously deployed their code to their IaaS or PaaS provider
+6) Set up or used a continuous integration system to automate the running of tests and continuously deployed their code to their IaaS or PaaS provider
 
 Our TeamCity server is available [here](http://teamcity.strateratech.com:8111).
 (use the guest account link to log in)
@@ -65,7 +65,7 @@ TeamCity is actively monitoring all feature branches of the Stratera/Gusto GitHu
 
 Commits to master automatically package gusto and publish it to npmjs.com. A successful publish job will automatically trigger the Deployment job to Production.
 
-7.) 
+7) 
 Set up or used configuration management
 
 GitHub is used for our source code repository and our code and configuration content is version controlled, peer reviewed, and tracked on a change-by-change basis. We strictly follow the GitHub Flow branch management strategy.
@@ -77,7 +77,7 @@ Our application and ci servers are being actively monitored in Amazon CloudWatch
 
 [See monitoring](DevelopmentPoolEvidence/aws/monitoring.JPG)
 
-9.) 
+9) 
 Deploy their software in a container (i.e., utilized operating-system-level virtualization)
 
 The gusto application runs in a Docker container in our Production environment.
