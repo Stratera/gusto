@@ -5,8 +5,8 @@ RUN     yum install -y npm
 
 # Register gusto source
 COPY src /src
-COPY package.json
-COPY gusto.js
+COPY package.json .
+COPY gusto.js .
 
 EXPOSE  8999
 
