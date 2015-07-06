@@ -10,4 +10,6 @@ COPY gusto.js .
 
 EXPOSE  8999
 
+RUN     npm install -y
+
 CMD ["node", "/gusto.js"]
