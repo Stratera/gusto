@@ -32,21 +32,6 @@ Used at least five modern and open-source technologies, regardless of architectu
 
 ![Version](DevelopmentPoolEvidence/general/Versions.JPG)
 
-| Technology | Version |
-| ---------- | ------- |
-| centos | 6.5 |
-| node | 0.12.0 |
-| express | 4.12.3 |
-| docker | 1.6.2 |
-| express-http-proxy | 0.6.0 |
-| istanbul | 0.3.16 |
-| mocha | 2.1.0 |
-| mocha-teamcity-reporter | 0.0.1 |
-| should | 7.0.1 |
-| supertest | 1.0.1 |
-| git |1.9.5 | 
-
-
 4)
 Deployed the prototype on an Infrastructure as a Service (IaaS) or Platform as a Service (PaaS) provider, and indicated which provider they used
 
