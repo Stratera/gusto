@@ -25,7 +25,10 @@ Assigned one leader, gave that person authority and responsibility, and held tha
 2)
 Assembled a multidisciplinary and collaborative team that includes at a minimum of two of the labor categories limited to the Development Pool labor categories.    
 
-Our Team consists of a DevOps Engineer and a Back-end Developer.  Both team members are experienced in the agile scrum development methodology and in playing the role of scrum master.  The DevOps Engineer plays the role of Scrum Master and also performs some of the development tasks.  The Back-end Developer performs the development quality assurance tasks such as peer reviews.
+Our Team consists of a DevOps Engineer and a Back-end Developer.  DevOps Engineer is an experienced scrum master who has implemented the agile scrum development methodology for this prototype. He performs some of the development tasks as well.  The Back-end Developer and DevOps Engineer peer review each other's work.
+
+[DevOps Engineer Resume](DevelopmentPoolEvidence/general/John-Dietz-resume-7-6-15.doc)
+[Back-end Developer Resume](DevelopmentPoolEvidence/general/Scott-Padgett-resume-7-6-15.doc)
 
 3)
 Used at least five modern and open-source technologies, regardless of architectural layer (frontend, backend, etc.)
@@ -81,6 +84,10 @@ Our application and ci servers are being actively monitored in Amazon CloudWatch
 Deploy their software in a container (i.e., utilized operating-system-level virtualization)
 
 The gusto application runs in a Docker container in our Production environment.
+
+[Docker container](DevelopmentPoolEvidence/docker/container-evidence.JPG)
+
+[Dockerfile](Dockerfile)
 
 10) 
 Used an iterative approach, where feedback informed subsequent work or versions of the prototype
